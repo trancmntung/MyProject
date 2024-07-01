@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyProject1.Application\MyProject.Application.csproj" />
+    <ProjectReference Include="..\MyProject1.Core\MyProject.Core.csproj" />
+    <ProjectReference Include="..\MyProject1.infrastructure\MyProject.infrastructure.csproj" />
+    <ProjectReference Include="..\MyProject1.Logging\MyProject.Logging.csproj" />
+    <ProjectReference Include="..\MyProject1.sql\MyProject.sql.csproj" />
+  </ItemGroup>
+
+</Project>
